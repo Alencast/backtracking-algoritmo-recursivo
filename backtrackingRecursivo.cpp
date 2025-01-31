@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 
-void soma_sublista_bt(int* a, int tam, int soma, std::vector<int> sublista_atual, std::vector<std::vector<int>> todas_solucoes) {
+void soma_sublista_bt(int* a, int tam, int soma, std::vector<int> &sublista_atual, std::vector<std::vector<int>> &todas_solucoes) {
     
     if (soma == 0) { 
         todas_solucoes.push_back(sublista_atual);
