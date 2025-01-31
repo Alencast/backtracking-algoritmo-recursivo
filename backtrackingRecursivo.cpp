@@ -32,9 +32,6 @@ int main() {
 
     soma_sublista_bt(a, n, s, sublista_atual, todas_solucoes);
 
-    
-    if (todas_solucoes.size() > 0) {
-       
         for (int i = 0; i < todas_solucoes.size(); i++) {
            
             for (int num : todas_solucoes[i]) {
@@ -42,10 +39,7 @@ int main() {
             }
             std::cout << "\n";
         }
-    } else {
-        std::cout << "Não existe soma " << s<< " no conjunto";
-    }
-
+   
     delete[] a;
     return 0;
 }
